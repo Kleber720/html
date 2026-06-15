@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens adaptaveis</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes 
+        ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/FOTOP.png"type="image/png">
+        <source media="(max-width: 1250px)" srcset="imagens/FOTOM.png"type="image/png">
+        <img src="imagens/FOTOG.png" alt="foto Grande">
+    </picture>
+
+    <h1>Reproduzir Áudio </h1>
+    <P>Vamos aprender a reproduzir áudios em HTML5</P>
+    <audio preload="metadata" controls autoplay >
+       <source src="link do audio" type="audio/mpeg">
+       <source src="link do audio" type="audio/ogg">
+    </audio>
+</body>
+</html>
